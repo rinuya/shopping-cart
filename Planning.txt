@@ -1,0 +1,9 @@
+Will need:
+
+Shop page (that displays all items)
+Cart page (that displays all items in cart)
+
+Therefore, I will need a state that keeps all the item in cart
+I will need to call the items w useEffect and access the random shop api
+I will need to have a function that lets me add items to the cart
+

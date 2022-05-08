@@ -1,11 +1,8 @@
 body {
   margin: 0 auto 0 auto;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  color: #3c4359;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  max-width: 1420px;
 
 }
 
@@ -14,3 +11,10 @@ code {
     monospace;
 }
 
+@font-face {
+  font-family: 'estebanregular';
+  src: url('esteban-regular-webfont.woff2') format('woff2'),
+       url('esteban-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
