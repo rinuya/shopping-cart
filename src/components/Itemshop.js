@@ -1,5 +1,7 @@
 import { useState, useEffect } from "react";
-import "../style/Itemshop.css"
+import "../style/Itemshop.css";
+import Item from "./Item";
+
 const Itemshop = (props) => {
 
     const cart = props.cart;
@@ -30,9 +32,12 @@ const Itemshop = (props) => {
         return (
             <div className="itemshopcontainer">
                 <div className="itemshopmain">
+                    <h1 className="categoryDisplayed">All Categories</h1>
+                    <div className="display">
                     {shop.map((item)=>{
-                        return <img alt={item.title} src={item.image} />
+                        return <Item item={item} />
                     })}
+                    </div>
                 </div>
             </div>
         )
