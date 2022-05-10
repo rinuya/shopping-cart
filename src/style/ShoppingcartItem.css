@@ -1,0 +1,28 @@
+.cartItem{
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr 0.5fr 1fr;
+    
+  
+}
+.delete{
+   margin-left: auto;
+   width: 100px;
+   background: white;
+   color: #c56161;
+   padding: 12px;
+   border: solid rgb(0, 0, 0, 0.5);
+   height: fit-content;
+   font-size: 0.9rem;
+}
+
+.delete:hover{
+    border: solid rgb(0, 0, 0, 0.8);
+}
+
+img{
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.amtcart{
+    font-size: 1rem;
+}

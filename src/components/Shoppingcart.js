@@ -1,9 +1,12 @@
-import { useState, useEffect } from "react";
 import "../style/Shoppingcart.css";
+import ShoppingcartItem from "./ShoppingcartItem";
 
 const Shoppingcart = (props) => {
-    const list = props.cart;
-    const [cart, setCart] = useState([list]);
+    const cart = props.cart;
+    const shop = props.shop;
+    const deleteItem = props.deleteItem
+
+
     if (!cart.length){
         return (
             <div className="shoppingcartouter">
@@ -14,6 +17,17 @@ const Shoppingcart = (props) => {
             </div>
             )
     }
+    return (
+        <div className="shoppingcartouter">
+            <div className="shoppingcart">
+                    {cart.map((item)=>{
+                    return (
+                        <ShoppingcartItem cartItem={item} shop={shop} deleteItem={deleteItem} />
+                    )
+                })}
+            </div>  
+        </div>
+    )
     
     
 }

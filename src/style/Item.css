@@ -13,7 +13,6 @@ form{
     grid-template-columns: 3ch 20ch 3ch;
     gap: 1ch;
     row-gap: 2ch;
-    /* justify-items: center; */
 }
 button{
     height: 3ch;

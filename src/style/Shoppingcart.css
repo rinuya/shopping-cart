@@ -6,9 +6,12 @@
 .shoppingcart{
     max-width: 1148px;
     display: flex;
+    flex-direction: column;
     flex-grow: 1;
-    gap: 2ch;
+    gap: 4ch;
+    padding-top: 5ch;
 }
 button{
     align-self: center;
 }
+
