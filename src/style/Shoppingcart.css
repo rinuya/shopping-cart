@@ -1,0 +1,14 @@
+.shoppingcartouter{
+    display: flex;
+    justify-content: center;
+}
+
+.shoppingcart{
+    max-width: 1148px;
+    display: flex;
+    flex-grow: 1;
+    gap: 2ch;
+}
+button{
+    align-self: center;
+}

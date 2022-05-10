@@ -9,9 +9,24 @@ function RouteSwitch() {
 
   const [cart, setCart] = useState([]);
 
-  const updateCart = () =>{
-    setCart=[];
+  const updateCart = (_id, _amount) =>{
+    if (!cart.some((item) => item.id ===_id)){
+      setCart([...cart, {id: _id, amount: _amount}]);
+    }
+    else{
+      setCart(cart.map((item)=>{
+        if (item.id ===_id){
+          return {id: item.id, amount: item.amount+_amount,}
+        }
+        else{
+          return {...item}
+        }
+      }))
+    }
   }
+  useEffect(()=>{
+    console.log(cart);
+  }, [cart])
   return (
     <BrowserRouter>
     <div className="App">
@@ -19,7 +34,7 @@ function RouteSwitch() {
         <div className="content">
           <Routes>
             <Route path="/" element={<Itemshop cart={cart} updateCart={updateCart} />} />
-            <Route path="/cart" element={<Shoppingcart />} />
+            <Route path="/cart" element={<Shoppingcart cart={cart} />} />
           </Routes>
         </div>
       </div>

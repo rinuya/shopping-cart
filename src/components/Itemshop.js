@@ -4,7 +4,7 @@ import Item from "./Item";
 
 const Itemshop = (props) => {
 
-    const cart = props.cart;
+    
     const updateCart= props.updateCart;
     const [shop, changeShop] = useState([]);
 
@@ -12,7 +12,6 @@ const Itemshop = (props) => {
         async function fetchItemshop() {
             let response = await fetch('https://fakestoreapi.com/products');
             response = await response.json();
-            console.log(response);
             changeShop(response);
         }
         fetchItemshop();
@@ -23,7 +22,7 @@ const Itemshop = (props) => {
         return (
             <div className="itemshopcontainer">
                 <div className="itemshopmain">
-                    <p>loading...</p>
+                    <p className="loading">loading...</p>
                 </div>
             </div>
         )
@@ -35,7 +34,7 @@ const Itemshop = (props) => {
                     <h1 className="categoryDisplayed">All Categories</h1>
                     <div className="display">
                     {shop.map((item)=>{
-                        return <Item item={item} />
+                        return <Item item={item} updateCart={updateCart} />
                     })}
                     </div>
                 </div>
