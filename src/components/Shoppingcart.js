@@ -12,7 +12,7 @@ const Shoppingcart = (props) => {
             <div className="shoppingcartouter">
                 <div className="shoppingcart">
                     <h3>Cart is empty</h3>
-                    <button>Return</button>
+                    
                 </div>
             </div>
             )
