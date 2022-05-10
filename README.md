@@ -1,9 +1,13 @@
 # Project from TOP (theodinproject.com)
 
-##Shopping Cart
+## Shopping Cart
 
 Goal of this exercise was to work with react and functional components.
 Data was taken from the fakestoreapi.
+
+#### Known bugs:
+
+Unable to use input and increment/decrement buttons at the same time
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
