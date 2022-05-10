@@ -1,4 +1,9 @@
-# Getting Started with Create React App
+# Project from TOP (theodinproject.com)
+
+##Shopping Cart
+
+Goal of this exercise was to work with react and functional components.
+Data was taken from the fakestoreapi.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
