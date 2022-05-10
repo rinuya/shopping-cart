@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/shopping-cart/static/css/main.7bcd8204.css",
+    "main.js": "/shopping-cart/static/js/main.e0b11f27.js",
+    "static/js/787.d6fe38e8.chunk.js": "/shopping-cart/static/js/787.d6fe38e8.chunk.js",
+    "static/media/esteban-regular-webfont.woff": "/shopping-cart/static/media/esteban-regular-webfont.d9d038250e966d5f1bf5.woff",
+    "static/media/esteban-regular-webfont.woff2": "/shopping-cart/static/media/esteban-regular-webfont.181fad8725e42515608f.woff2",
+    "index.html": "/shopping-cart/index.html",
+    "main.7bcd8204.css.map": "/shopping-cart/static/css/main.7bcd8204.css.map",
+    "main.e0b11f27.js.map": "/shopping-cart/static/js/main.e0b11f27.js.map",
+    "787.d6fe38e8.chunk.js.map": "/shopping-cart/static/js/787.d6fe38e8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7bcd8204.css",
+    "static/js/main.e0b11f27.js"
+  ]
+}
